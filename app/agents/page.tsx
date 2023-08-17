@@ -77,7 +77,7 @@ export default function AgentsPage() {
   );
   return (
     <ChatWindow
-      endpoint="api/chat/agents"
+      endpoint="api/chat/agents/sql"
       emptyStateComponent={InfoCard}
       placeholder="Squawk! I'm a conversational agent! Ask me about the current weather in Honolulu!"
       titleText="Polly the Agentic Parrot"
