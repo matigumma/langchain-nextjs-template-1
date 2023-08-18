@@ -4,7 +4,7 @@ import { SqlDatabase } from "langchain/sql_db";
 import { createSqlAgent, SqlToolkit } from "langchain/agents/toolkits/sql";
 import { DataSource } from "typeorm";
 import { NextRequest, NextResponse } from "next/server";
-
+// https://github.com/Syed007Hassan/Langchain/blob/7be192c55b1446dad64dbb76f39834e420cacc9d/SQL-AGENTS/index2.js
 const SQL_PREFIX = `You are an agent designed to interact with a SQL database.
 Given an input question, create a syntactically correct {dialect} query to run, then look at the results of the query and return the answer.
 Always limit your query to at most {top_k} results using the LIMIT clause.
