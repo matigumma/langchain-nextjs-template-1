@@ -4,9 +4,9 @@ export default function Home() {
   const InfoCard = (
     <div className="p-4 md:p-8 rounded bg-[#25252d] w-full max-h-[85%] overflow-hidden">
       <h1 className="text-3xl md:text-4xl mb-4">
-        ▲ Next.js + LangChain.js 🦜🔗
+        Next.js + LangChain.js + SqlToolKit
       </h1>
-      <ul>
+      {/* <ul>
         <li className="text-l">
           🤝
           <span className="ml-2">
@@ -65,16 +65,24 @@ export default function Home() {
             Try asking e.g. <code>What is it like to be a pirate?</code> below!
           </span>
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
   return (
+    // <ChatWindow
+    //   endpoint="api/chat"
+    //   emoji="🏴‍☠️"
+    //   titleText="Patchy the Chatty Pirate"
+    //   placeholder="I'm an LLM pretending to be a pirate! Ask me about the pirate life!"
+    //   emptyStateComponent={InfoCard}
+    // ></ChatWindow>
     <ChatWindow
-      endpoint="api/chat"
-      emoji="🏴‍☠️"
-      titleText="Patchy the Chatty Pirate"
-      placeholder="I'm an LLM pretending to be a pirate! Ask me about the pirate life!"
+      endpoint="api/chat/agents/sql"
       emptyStateComponent={InfoCard}
+      placeholder="..."
+      titleText="Polly the Agentic Parrot"
+      emoji="🦜"
+      showIntermediateStepsToggle={true}
     ></ChatWindow>
   );
 }
