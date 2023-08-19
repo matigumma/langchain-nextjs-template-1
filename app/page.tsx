@@ -80,8 +80,8 @@ export default function Home() {
       endpoint="api/chat/agents/sql"
       emptyStateComponent={InfoCard}
       placeholder="..."
-      titleText="Polly the Agentic Parrot"
-      emoji="🦜"
+      titleText=""
+      emoji=""
       showIntermediateStepsToggle={true}
     ></ChatWindow>
   );
